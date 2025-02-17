@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JS Typing Speed Test</title>
+    <script src="./index.js" async></script>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i,900,900i" type="text/css" media="all">
+    <link href="./output.css" rel="stylesheet">
+    
+</head>
+
+<body class="  flex flex-col items-center justify-center h-screen bg-gradient-to-l from-blue-200 to bg-purple-200">
+    <header class="masthead w-full mb-6  flex flex-col items-center justify-center">
+        <h1 class="text-4xl font-bold  bg-gradient-to-l from-red-200 to bg-purple-300 ">Typing Speed Test</h1>
+    </header>
+    <main class=" shadow-md bg-gradient-to-r from-blue-300 to bg-purple-300 rounded-lg p-8 w-full max-w-2xl">
+        
+        <section class="test-area mb-6">
+
+            <div class="right">
+                 <span id="origin-text"  class=" mb-4 flex justify-between">
+                <span id="" class=" text-lg text-gray-900"  ><p>The simple text to test.</p></span>
+                <div id="btnNew" class="flex justify-between text-white py-2 bg-blue-500 cursor-pointer px-6 rounded-md  hover:bg-blue-600 ">Next</div>
+            </span><!-- #origin-text -->
+
+            </div>      
+           
+            <div class="test-wrapper mb-4">
+                <textarea id="test-area" name="textarea" rows="6"placeholder="By typing the first letter, the timer starts counting" class="w-full p-4 border-2 rounded-md  "></textarea>
+            </div><!-- .test-wrapper -->
+
+            <div class="meta mb-4">
+                <section id="clock"  class="flex justify-center mb-4">
+                    <div class="timer text-3xl ">00:00:00</div>
+                </section>
+                <div class="flex justify-center">
+                    <button id="reset" class="bg-blue-500  cursor-pointer text-white px-6 py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">Reset</button>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
